@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Aditya Mohanty — Profile</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR — uses Flexbox -->
+    <nav class="navbar">
+      <span class="nav-name">Aditya Mohanty</span>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#details">Details</a>
+        <a href="#skills">Skills</a>
+        <a href="#links">Links</a>
+      </div>
+      <!-- Dark/Light toggle button -->
+      <button id="theme-btn" style="background:transparent;border:1px solid #ccc;color:#ccc;padding:6px 12px;border-radius:6px;cursor:pointer;font-size:13px;">🌙 Dark Mode</button>
+    </nav>
+
+    <!-- HERO — uses Flexbox -->
+    <header class="hero">
+      <div class="profile-pic-container">
+        <a href="https://ibb.co/FLWmt23S">
+          <img src="https://i.ibb.co/5g9GVm4N/IMG-5003-1.avif" alt="Aditya Mohanty" width="160" height="160">
+        </a>
+      </div>
+      <div class="hero-text">
+        <p id="currentTime"></p>
+        <h1 class="title">Aditya Mohanty</h1>
+        <!-- Typing effect -->
+        <p class="subtitle">I'm a <span id="typed-text"></span></p>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <!-- ABOUT -->
+      <section id="about" class="card fade-in">
+        <h2>About Me</h2>
+        <hr>
+        <p>
+          Fourth-year Electronics and Communication Engineering student with a strong interest in
+          <b>AI/ML and Python development</b>. Passionate about building intelligent systems and turning
+          complex technical ideas into clear, engaging presentations. Currently focused on developing
+          practical skills through projects, internships, and continuous learning.
+        </p>
+      </section>
+
+      <!-- DETAILS + LINKS side by side — uses Grid -->
+      <div class="two-col-grid">
+
+        <section id="details" class="card fade-in">
+          <h2>Details</h2>
+          <hr>
+          <p><b>Name:</b> Aditya Mohanty</p>
+          <p><b>Age:</b> 21</p>
+          <p><b>Location:</b> Bhubaneswar, ODISHA</p>
+        </section>
+
+        <section id="links" class="card fade-in">
+          <h2>Links</h2>
+          <hr>
+          <div class="links">
+            <a href="https://github.com/AdityaMohanty374" target="_blank">
+              <span class="link-icon">⌥</span> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/aditya-mohanty-299812252/" target="_blank">
+              <span class="link-icon">in</span> LinkedIn
+            </a>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- SKILLS — uses Grid -->
+      <section id="skills" class="card fade-in">
+        <h2>Skills</h2>
+        <hr>
+        <div class="skills-grid">
+          <div class="skill-tag">Python</div>
+          <div class="skill-tag">AI / ML</div>
+          <div class="skill-tag">HTML &amp; CSS</div>
+          <div class="skill-tag">JavaScript</div>
+          <div class="skill-tag">ECE</div>
+          <div class="skill-tag">Presentations</div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Aditya Mohanty</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

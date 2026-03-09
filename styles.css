@@ -1,0 +1,257 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+.navbar {
+  display: flex;                      
+  justify-content: space-between;     
+  align-items: center;              
+  padding: 16px 40px;
+  background-color: #2c3e50;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;                      
+  gap: 24px;                          
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+
+.hero {
+  display: flex;                      
+  align-items: center;                
+  gap: 40px;                          
+  padding: 48px 40px;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profile-pic-container img {
+  border-radius: 50%;
+  border: 4px solid #2c3e50;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;             
+  gap: 8px;
+}
+
+#currentTime {
+  font-size: 13px;
+  color: #999;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+}
+
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 28px 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.card h2 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.card hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin-bottom: 16px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+
+.two-col-grid {
+  display: grid;                            
+  grid-template-columns: 1fr 1fr;          
+  gap: 24px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.skill-tag {
+  background: #eaf0fb;
+  color: #2c3e50;
+  border: 1px solid #c5d5ea;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #2980b9;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #1a5276;
+}
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 16px;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;           
+    gap: 12px;
+    padding: 16px 20px;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;           
+    text-align: center;
+    padding: 32px 20px;
+    gap: 20px;
+  }
+
+  .two-col-grid {
+    grid-template-columns: 1fr;      
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile only */
+@media (max-width: 480px) {
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+body.dark {
+    background: #121212;
+    color: #f0f0f0;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#typed-text::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
