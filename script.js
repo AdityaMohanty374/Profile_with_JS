@@ -1,12 +1,4 @@
-// ============================================
-//  PROFILE PAGE — script.js
-//  Aditya Mohanty
-// ============================================
-
-
-// ─────────────────────────────────────────────
-// 1. DARK / LIGHT MODE TOGGLE
-// ─────────────────────────────────────────────
+//theme white n dark 
 const themeBtn = document.getElementById("theme-btn");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -24,9 +16,7 @@ if (themeBtn) {
 }
 
 
-// ─────────────────────────────────────────────
-// 2. TYPING EFFECT
-// ─────────────────────────────────────────────
+// typed effect
 const typedEl = document.getElementById("typed-text");
 
 const roles = ["Python Developer", "AI/ML Enthusiast", "ECE Student", "Intern @ SecoudSoft"];
@@ -64,9 +54,7 @@ function type() {
 type();
 
 
-// ─────────────────────────────────────────────
-// 3. SMOOTH SCROLL
-// ─────────────────────────────────────────────
+//smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -78,9 +66,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// ─────────────────────────────────────────────
-// 4. SCROLL ANIMATIONS (fade-in)
-// ─────────────────────────────────────────────
+//scrolling animations
 const fadeEls = document.querySelectorAll(".fade-in");
 
 const observer = new IntersectionObserver((entries) => {
@@ -95,9 +81,7 @@ const observer = new IntersectionObserver((entries) => {
 fadeEls.forEach(el => observer.observe(el));
 
 
-// ─────────────────────────────────────────────
-// 5. LIVE CLOCK
-// ─────────────────────────────────────────────
+//live clock
 function updateTime() {
   const el = document.getElementById("currentTime");
   if (!el) return;
